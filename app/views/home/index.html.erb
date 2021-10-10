@@ -1,2 +1,18 @@
-<h1>Home#index</h1>
-<p>Find me in app/views/home/index.html.erb</p>
+<style type="text/css">
+    .jumbotron {
+      padding: 4rem 2rem;
+      margin-bottom: 2rem;
+      background-color: var(--bs-light);
+      border-radius: .3rem;  
+    }
+</style>
+
+<div class="jumbotron <%= @api_color %>">
+  <h1 class="display-4"><%= @final_output %></h1>
+  <p class="lead">This is the current ozone air quality readout for my neighborhood in Las Vegas.</p>
+  <hr class="my-4">
+  <p>Hit "Reload" in your web browser to update the reading...</p>
+  <a class="btn btn-secondary btn-lg" href="#" role="button">Learn more</a>
+</div>
+
+<br />
